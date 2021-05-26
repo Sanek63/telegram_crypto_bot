@@ -1,0 +1,4 @@
+TOKEN = ""
+
+MAX_RETRIES = 5
+WAIT_SECONDS = 2
