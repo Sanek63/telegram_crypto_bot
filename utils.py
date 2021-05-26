@@ -8,9 +8,9 @@ def enctypr_caesar(text, key=3):
         if char == ' ':
             c += char
         elif char.isupper():
-            c = c + chr((ord(char) + key - 65) % 26 + 65)
+            c = c + chr((ord(char) + key - 1040) % 33 + 1040)
         else:
-            c = c + chr((ord(char) + key - 97) % 26 + 97)
+            c = c + chr((ord(char) + key - 1072) % 33 + 1072)
     return c
 
 
@@ -20,9 +20,9 @@ def decrypt_caesar(text, key=3):
         if char == ' ':
             c += char
         elif char.isupper():
-            c = c + chr((ord(char) - key - 65) % 26 + 65)
+            c = c + chr((ord(char) - key - 1040) % 33 + 1040)
         else:
-            c = c + chr((ord(char) - key - 97) % 26 + 97)
+            c = c + chr((ord(char) - key - 1072) % 33 + 1072)
     return c
 
 
